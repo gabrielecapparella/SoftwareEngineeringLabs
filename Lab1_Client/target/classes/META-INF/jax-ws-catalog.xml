@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/Lab1_Bank/BankImplService?wsdl" uri="wsdl/localhost_8080/Lab1_Bank/BankImplService.wsdl"/>
+    <system systemId="http://localhost:8080/Lab1_Bank/BankImplService?xsd=1" uri="wsdl/localhost_8080/Lab1_Bank/BankImplService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/Lab1_AAAWS/AaawsImplService?wsdl" uri="wsdl/localhost_8080/Lab1_AAAWS/AaawsImplService.wsdl"/>
+    <system systemId="http://localhost:8080/Lab1_AAAWS/AaawsImplService?xsd=1" uri="wsdl/localhost_8080/Lab1_AAAWS/AaawsImplService.xsd_1.xsd"/>
+</catalog>
