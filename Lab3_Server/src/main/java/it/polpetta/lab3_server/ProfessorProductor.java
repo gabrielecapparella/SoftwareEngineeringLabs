@@ -45,7 +45,7 @@ public class ProfessorProductor {
         try {
             properties = new Properties();
             properties.setProperty(Context.INITIAL_CONTEXT_FACTORY, "org.apache.activemq.jndi.ActiveMQInitialContextFactory");
-            properties.setProperty(Context.PROVIDER_URL, "vm://localhost:61616"); // or "tcp://localhost:61616" if already active
+            properties.setProperty(Context.PROVIDER_URL, "tcp://localhost:61616");
             jndiContext = new InitialContext(properties);
         } catch (NamingException e) {
             System.out.println(e.toString());
