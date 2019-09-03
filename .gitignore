@@ -29,3 +29,4 @@ hs_err_pid*
 /RabbitMQ_Recv/target/
 /Exam_Lug_Server/target/
 /Exam_Lug_Client/target/
+/Exam_Lug_DB/target/
