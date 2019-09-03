@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2.8 svn-revision#13980. --><xs:schema xmlns:tns="http://exam_lug_server.polpetta.it/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://exam_lug_server.polpetta.it/">
+
+<xs:element name="getMovie" type="tns:getMovie"/>
+
+<xs:element name="getMovieResponse" type="tns:getMovieResponse"/>
+
+<xs:element name="listMovies" type="tns:listMovies"/>
+
+<xs:element name="listMoviesResponse" type="tns:listMoviesResponse"/>
+
+<xs:complexType name="getMovie">
+<xs:sequence>
+<xs:element name="arg0" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getMovieResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listMovies">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="listMoviesResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

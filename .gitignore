@@ -27,3 +27,5 @@ hs_err_pid*
 /Lab3_Client/target/
 /RabbitMQ_Send/target/
 /RabbitMQ_Recv/target/
+/Exam_Lug_Server/target/
+/Exam_Lug_Client/target/
