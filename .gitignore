@@ -25,3 +25,5 @@ hs_err_pid*
 /Lab2_Server/nbproject/
 /Lab3_Server/target/
 /Lab3_Client/target/
+/RabbitMQ_Send/target/
+/RabbitMQ_Recv/target/

@@ -9,6 +9,7 @@ import java.util.Properties;
 import javax.jms.ConnectionFactory;
 import javax.jms.Destination;
 import javax.jms.JMSException;
+import javax.jms.MessageConsumer;
 import javax.jms.Session;
 import javax.jms.Topic;
 import javax.jms.TopicConnection;
@@ -36,9 +37,11 @@ public class Client {
             TopicSession session = (TopicSession)connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
 
             Destination destination = (Destination)ctx.lookup("dynamicTopics/professors");
-            TopicSubscriber subscriber = session.createSubscriber((Topic)destination);
+            //TopicSubscriber subscriber = session.createSubscriber((Topic)destination);
+            MessageConsumer consumer = session.createConsumer((Topic)destination, "id = '0'");
             
-            subscriber.setMessageListener(new ProfessorListener());
+            consumer.setMessageListener(new ProfessorListener()); //asynch
+            //TextMessage msg = topicSubscriber.receive(); this would be sync
             connection.start();
         } catch (Exception e) {
             System.out.println("Caught: " + e);
